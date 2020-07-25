@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>589ad934-10d4-410c-b11a-72de23ca2611</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>45d0abee-1572-4fb3-b68e-f532e232f880</UniqueIdentifier>
+    </Filter>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Filter Include="Content\Shaders">
+      <UniqueIdentifier>{526bb568-9b04-406c-97f2-65649c5a9ebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Textures">
+      <UniqueIdentifier>{76a8eddb-f0a9-4dde-9b69-0db8ffd3eee2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{e82c4985-8686-4a6b-a69e-bec6b7332b52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawables">
+      <UniqueIdentifier>{6784cee9-23bb-46e2-940e-d56213da7b69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawables\Planet">
+      <UniqueIdentifier>{d8eb1d47-32ef-4871-848a-4f2b1dcfa292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawables\Player">
+      <UniqueIdentifier>{115e7115-907a-4119-b5d0-f1ad4114f82b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawables\SpriteRenderers">
+      <UniqueIdentifier>{50a0289a-5086-4fdf-9fa7-d69dfbfcd96e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawables\Templates">
+      <UniqueIdentifier>{e192e2f5-4d0e-4114-bd3d-91c6788c7194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawables\Templates\Ball">
+      <UniqueIdentifier>{f3725133-f571-4c67-96f2-7e37667d9211}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawables\Templates\Field">
+      <UniqueIdentifier>{5d81417e-e5b6-46a5-9a6f-f4266829e54b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawables\Templates\MoodySprite">
+      <UniqueIdentifier>{bf7bbcaa-7b93-4999-9fc8-6a0303fcce6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawables\SpriteRenderers\NumberSprite">
+      <UniqueIdentifier>{fb26ddd5-4ec6-42f2-8486-78316940f822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawables\SpriteRenderers\PercentSprite">
+      <UniqueIdentifier>{d48a48af-cf7d-42de-a9f0-6aa18918dd92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawables\SpriteRenderers\PopupSprite">
+      <UniqueIdentifier>{af5263bf-af4d-4149-9d54-29a44c5b22c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawables\Ship">
+      <UniqueIdentifier>{af96db2a-1bc5-4c0b-9e38-23be4d51be9f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="GameMain.cpp" />
+    <ClCompile Include="Ball.cpp">
+      <Filter>Drawables\Templates\Ball</Filter>
+    </ClCompile>
+    <ClCompile Include="BallManager.cpp">
+      <Filter>Drawables\Templates\Ball</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Drawables\Templates\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldManager.cpp">
+      <Filter>Drawables\Templates\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteDemoManager.cpp">
+      <Filter>Drawables\Templates\MoodySprite</Filter>
+    </ClCompile>
+    <ClCompile Include="MoodySprite.cpp">
+      <Filter>Drawables\Templates\MoodySprite</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanetManager.cpp">
+      <Filter>Drawables\Planet</Filter>
+    </ClCompile>
+    <ClCompile Include="Planet.cpp">
+      <Filter>Drawables\Planet</Filter>
+    </ClCompile>
+    <ClCompile Include="random.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerManager.cpp">
+      <Filter>Drawables\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberSprite.cpp">
+      <Filter>Drawables\SpriteRenderers\NumberSprite</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberSpriteManager.cpp">
+      <Filter>Drawables\SpriteRenderers\NumberSprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Drawables\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Ship.cpp">
+      <Filter>Drawables\Ship</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundRenderer.cpp">
+      <Filter>Drawables\SpriteRenderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Drawables\SpriteRenderers</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuRenderer.cpp">
+      <Filter>Drawables\SpriteRenderers</Filter>
+    </ClCompile>
+    <ClCompile Include="PercentSprite.cpp">
+      <Filter>Drawables\SpriteRenderers\PercentSprite</Filter>
+    </ClCompile>
+    <ClCompile Include="PercentSpriteManager.cpp">
+      <Filter>Drawables\SpriteRenderers\PercentSprite</Filter>
+    </ClCompile>
+    <ClCompile Include="PopupSprite.cpp">
+      <Filter>Drawables\SpriteRenderers\PopupSprite</Filter>
+    </ClCompile>
+    <ClCompile Include="PopupSpriteManager.cpp">
+      <Filter>Drawables\SpriteRenderers\PopupSprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Fleet.cpp">
+      <Filter>Drawables\Ship</Filter>
+    </ClCompile>
+    <ClCompile Include="FleetManager.cpp">
+      <Filter>Drawables\Ship</Filter>
+    </ClCompile>
+    <ClCompile Include="StateManager.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="GameMain.h" />
+    <ClInclude Include="Ball.h">
+      <Filter>Drawables\Templates\Ball</Filter>
+    </ClInclude>
+    <ClInclude Include="BallManager.h">
+      <Filter>Drawables\Templates\Ball</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>Drawables\Templates\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldManager.h">
+      <Filter>Drawables\Templates\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteDemoManager.h">
+      <Filter>Drawables\Templates\MoodySprite</Filter>
+    </ClInclude>
+    <ClInclude Include="MoodySprite.h">
+      <Filter>Drawables\Templates\MoodySprite</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanetManager.h">
+      <Filter>Drawables\Planet</Filter>
+    </ClInclude>
+    <ClInclude Include="Planet.h">
+      <Filter>Drawables\Planet</Filter>
+    </ClInclude>
+    <ClInclude Include="random.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseUtils.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerManager.h">
+      <Filter>Drawables\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="NumberSprite.h">
+      <Filter>Drawables\SpriteRenderers\NumberSprite</Filter>
+    </ClInclude>
+    <ClInclude Include="NumberSpriteManager.h">
+      <Filter>Drawables\SpriteRenderers\NumberSprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Drawables\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Ship.h">
+      <Filter>Drawables\Ship</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundRenderer.h">
+      <Filter>Drawables\SpriteRenderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Drawables\SpriteRenderers</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuRenderer.h">
+      <Filter>Drawables\SpriteRenderers</Filter>
+    </ClInclude>
+    <ClInclude Include="PercentSprite.h">
+      <Filter>Drawables\SpriteRenderers\PercentSprite</Filter>
+    </ClInclude>
+    <ClInclude Include="PercentSpriteManager.h">
+      <Filter>Drawables\SpriteRenderers\PercentSprite</Filter>
+    </ClInclude>
+    <ClInclude Include="PopupSprite.h">
+      <Filter>Drawables\SpriteRenderers\PopupSprite</Filter>
+    </ClInclude>
+    <ClInclude Include="PopupSpriteManager.h">
+      <Filter>Drawables\SpriteRenderers\PopupSprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Fleet.h">
+      <Filter>Drawables\Ship</Filter>
+    </ClInclude>
+    <ClInclude Include="FleetManager.h">
+      <Filter>Drawables\Ship</Filter>
+    </ClInclude>
+    <ClInclude Include="StateManager.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Content\Textures\snoods_default.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\numberspritesheet.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\Background.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\blue25.jpg">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\blue50.jpg">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\blue75.jpg">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\blue100.jpg">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\BlueWin.jpg">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\BlueWin.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\Pause.jpg">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\Pause.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\red25.jpg">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\red50.jpg">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\red75.jpg">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\red100.jpg">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\RedWin.jpg">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\RedWin.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\Title.jpg">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\Title.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\Background.jpg">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\blueSpriteSheet.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\redSpriteSheet.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\popupUISpriteSheet.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="Content\Textures\PercentSpriteSheet.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <Filter>Util</Filter>
+    </None>
+    <None Include="Game.Universal_TemporaryKey.pfx">
+      <Filter>Util</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Content\Shaders\ShapeRendererVS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\Shaders\ShapeRendererPS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\Shaders\SpriteRendererVS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\Shaders\SpriteRendererPS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <Filter>Util</Filter>
+    </AppxManifest>
+  </ItemGroup>
+</Project>

@@ -202,6 +202,25 @@ namespace DirectXGame
 							PlayerManager::GetInstance()->getPlayer(i)->selectPlanet();
 					}
 
+					// ALT control keys for player 2 if no numpad
+					//if (i == 1)
+					//{
+					//	if (mKeyboard->WasKeyPressedThisFrame(Keys::J))
+					//		PlayerManager::GetInstance()->getPlayer(i)->setHighlightedPlanet(Planet::Neighbor::LEFT);
+					//	else if (mKeyboard->WasKeyPressedThisFrame(Keys::L))
+					//		PlayerManager::GetInstance()->getPlayer(i)->setHighlightedPlanet(Planet::Neighbor::RIGHT);
+					//	else if (mKeyboard->WasKeyPressedThisFrame(Keys::I))
+					//		PlayerManager::GetInstance()->getPlayer(i)->setHighlightedPlanet(Planet::Neighbor::UP);
+					//	else if (mKeyboard->WasKeyPressedThisFrame(Keys::K))
+					//		PlayerManager::GetInstance()->getPlayer(i)->setHighlightedPlanet(Planet::Neighbor::DOWN);
+
+					//	if (mKeyboard->WasKeyPressedThisFrame(Keys::U))
+					//		PlayerManager::GetInstance()->getPlayer(i)->changePercentageSelection();
+
+					//	if (mKeyboard->WasKeyPressedThisFrame(Keys::O))
+					//		PlayerManager::GetInstance()->getPlayer(i)->selectPlanet();
+					//}
+
 					if (i == 1)
 					{
 						if (mKeyboard->WasKeyPressedThisFrame(Keys::NumPad4))

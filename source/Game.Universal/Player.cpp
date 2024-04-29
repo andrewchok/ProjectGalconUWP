@@ -35,7 +35,7 @@ namespace DirectXGame
 		mFleetList.push_back(new Fleet(numOfShips, mHighlightedPlanet, mSelectedPlanet, mColor));
 	}
 
-	const char8_t Player::getPlayerID()
+	const char8_t Player::getPlayerID() const
 	{
 		return mPlayerID;
 	}

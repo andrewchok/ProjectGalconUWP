@@ -15,7 +15,11 @@ namespace DirectXGame
 	const DirectX::XMFLOAT4 PlayerManager::PLAYER_ONE_COLOR = XMFLOAT4(0, 0, 1, 1.0f);
 	const DirectX::XMFLOAT4 PlayerManager::PLAYER_TWO_COLOR = XMFLOAT4(1, 0, 0, 1.0f);
 	const float_t PlayerManager::PLAYER_START_SHIPCOUNT = 50.0f;
-	const float_t PlayerManager::HIGHLIGHT_OFFSET = 5;
+	const char8_t PlayerManager::PLAYER_ONE_ID = 0;
+	const char8_t PlayerManager::PLAYER_TWO_ID = 1;
+	const float_t PlayerManager::HIGHLIGHT_OFFSET_1 = 7;
+	const float_t PlayerManager::HIGHLIGHT_OFFSET_2 = 10;
+	const int PlayerManager::HIGHLIGHT_THICKNESS = 8;
 
 	const uint32_t PlayerManager::CircleResolution = 32;
 	const uint32_t PlayerManager::LineCircleVertexCount = PlayerManager::CircleResolution + 1;
@@ -309,8 +313,8 @@ namespace DirectXGame
 		direct3DDeviceContext->IASetVertexBuffers(0, 1, mCircleVertexBuffer.GetAddressOf(), &stride, &offset);
 
 		auto highlightPlanet = player.GetHighlightedPlanet();
-		float radius = highlightPlanet->Radius() + HIGHLIGHT_OFFSET;
-		int thickness = 5;
+		float radius = highlightPlanet->Radius() + (player.getPlayerID() == PLAYER_ONE_ID ? HIGHLIGHT_OFFSET_1 : HIGHLIGHT_OFFSET_2);
+		int thickness = HIGHLIGHT_THICKNESS;
 		for (int i = 0; i < thickness; ++i)
 		{
 			XMMATRIX scale = XMMatrixScaling(radius - i*.5f, radius - i * .5f, radius - i * .5f);
@@ -329,7 +333,7 @@ namespace DirectXGame
 
 		if (player.GetSelectedPlanet() && player.GetSelectedPlanet() != player.GetHighlightedPlanet())
 		{
-			const float_t selectRadius = player.GetSelectedPlanet()->Radius() + HIGHLIGHT_OFFSET;
+			const float_t selectRadius = player.GetSelectedPlanet()->Radius() + (player.getPlayerID() == PLAYER_ONE_ID ? HIGHLIGHT_OFFSET_1 : HIGHLIGHT_OFFSET_2);
 			const Coord2D selectPos = player.GetSelectedPlanet()->GetPlanetPosition();
 
 			for (int i = 0; i < thickness; ++i)
@@ -379,7 +383,7 @@ namespace DirectXGame
 			VertexPosition(XMFLOAT4
 			(
 				highlightPos.x - OrthographicCamera::DefaultViewWidth / 2,
-				highlightPos.y - OrthographicCamera::DefaultViewHeight / 2,
+				highlightPos.y + (player.getPlayerID() == PLAYER_ONE_ID ? -1 : 1) - OrthographicCamera::DefaultViewHeight / 2,
 				0.0f,
 				1.0f)
 			),
@@ -388,7 +392,7 @@ namespace DirectXGame
 			VertexPosition(XMFLOAT4
 			(
 				selectPos.x - OrthographicCamera::DefaultViewWidth / 2,
-				selectPos.y - OrthographicCamera::DefaultViewHeight / 2,
+				selectPos.y + (player.getPlayerID() == PLAYER_ONE_ID ? -1 : 1) - OrthographicCamera::DefaultViewHeight / 2,
 				0.0f,
 				1.0f)
 			),
@@ -397,7 +401,7 @@ namespace DirectXGame
 			VertexPosition(XMFLOAT4
 			(
 				highlightPos.x - OrthographicCamera::DefaultViewWidth / 2,
-				highlightPos.y - OrthographicCamera::DefaultViewHeight / 2,
+				highlightPos.y + (player.getPlayerID() == PLAYER_ONE_ID ? -1 : 1) - OrthographicCamera::DefaultViewHeight / 2,
 				0.0f,
 				1.0f)
 			),
@@ -406,7 +410,7 @@ namespace DirectXGame
 			VertexPosition(XMFLOAT4
 			(
 				selectPos.x - OrthographicCamera::DefaultViewWidth / 2,
-				selectPos.y - OrthographicCamera::DefaultViewHeight / 2,
+				selectPos.y + (player.getPlayerID() == PLAYER_ONE_ID ? -1 : 1) - OrthographicCamera::DefaultViewHeight / 2,
 				0.0f,
 				1.0f)
 			),

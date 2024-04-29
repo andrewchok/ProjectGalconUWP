@@ -16,7 +16,7 @@ namespace DirectXGame
 
 		void shutdown();
 
-		const char8_t getPlayerID();
+		const char8_t getPlayerID() const;
 		void setColor(const DirectX::XMFLOAT4& color);
 		const DirectX::XMFLOAT4& Color() const;
 

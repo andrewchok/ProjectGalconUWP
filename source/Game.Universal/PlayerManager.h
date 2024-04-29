@@ -14,7 +14,11 @@ namespace DirectXGame
 		static const DirectX::XMFLOAT4 PLAYER_ONE_COLOR;
 		static const DirectX::XMFLOAT4 PLAYER_TWO_COLOR;
 		static const float_t PLAYER_START_SHIPCOUNT;
-		static const float_t HIGHLIGHT_OFFSET;
+		static const char8_t PLAYER_ONE_ID;
+		static const char8_t PLAYER_TWO_ID;
+		static const float_t HIGHLIGHT_OFFSET_1;
+		static const float_t HIGHLIGHT_OFFSET_2;
+		static const int HIGHLIGHT_THICKNESS;
 
 
 	public:

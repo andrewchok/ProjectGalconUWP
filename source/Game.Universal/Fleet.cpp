@@ -85,7 +85,7 @@ namespace DirectXGame
 
 	void Fleet::shutdown()
 	{
-		for (size_t i = mShipList.size() - 1; i >= 0; i--)
+		for (int32_t i = static_cast<int32_t>(mShipList.size()) - 1; i >= 0; i--)
 		{
 			delete(mShipList.at(i));
 			mShipList.erase(mShipList.begin() + i);

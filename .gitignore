@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+# Misc build files
+build/.vs/*
+build/packages/*
+
+source/Game.Universal/bin/*
+source/Game.Universal/Generated Files/*
+source/Game.Universal/obj/*
+
+source/Library.Windows/bin/*
+source/Library.Windows/Generated Files/*
+source/Library.Windows/obj/*

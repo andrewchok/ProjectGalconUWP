@@ -52,6 +52,14 @@ public:
 		return result;
 	}
 
+	struct Coord2D& operator+=(const struct Coord2D& rhs) noexcept
+	{
+		this->x += rhs.x;
+		this->y += rhs.y;
+
+		return *this;
+	}
+
 	struct Coord2D operator-(const struct Coord2D& rhs) const noexcept
 	{
 		struct Coord2D result;
@@ -59,6 +67,14 @@ public:
 		result.y = y - rhs.y;
 
 		return result;
+	}
+
+	struct Coord2D& operator-=(const struct Coord2D& rhs) noexcept
+	{
+		this->x -= rhs.x;
+		this->y -= rhs.y;
+
+		return *this;
 	}
 
 	struct Coord2D operator*(const float_t rhs) const noexcept
@@ -70,6 +86,14 @@ public:
 		return result;
 	}
 
+	struct Coord2D& operator*=(const struct Coord2D& rhs) noexcept
+	{
+		this->x *= rhs.x;
+		this->y *= rhs.y;
+
+		return *this;
+	}
+
 	struct Coord2D operator/(const float_t rhs) const noexcept
 	{
 		struct Coord2D result;
@@ -77,6 +101,14 @@ public:
 		result.y = y / rhs;
 
 		return result;
+	}
+
+	struct Coord2D& operator/=(const float_t& rhs) noexcept
+	{
+		this->x /= rhs;
+		this->y /= rhs;
+
+		return *this;
 	}
 
 	bool operator==(const struct Coord2D& rhs) const noexcept
